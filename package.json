@@ -1,0 +1,33 @@
+{
+  "name": "hubot-disqus",
+  "version": "0.0.1",
+  "description": "A Disqus adapter for hubot",
+  "license": "MIT",
+  "author": "Jesús Lobos <jlobitu@gmail.com>",
+  "main": "lib/disqus.js",
+  "scripts": {
+    "build": "npm run clean && babel src -d lib",
+    "clean": "rimraf lib/*",
+    "prepublish": "npm run build"
+  },
+  "engines": {
+    "node": ">=0.10.x"
+  },
+  "files": [
+    "lib/disqus.js"
+  ],
+  "keywords": [
+    "hubot",
+    "adapter",
+    "disqus"
+  ],
+  "dependencies": {
+    "array-equal": "^1.0.0",
+    "neo-disqus": "0.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "rimraf": "^2.5.4"
+  }
+}
