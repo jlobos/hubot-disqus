@@ -1,12 +1,11 @@
-
-import { Adapter, TextMessage } from 'hubot'
-import { parse } from 'url'
-import equals from 'array-equal'
-import NeoDisqus from 'neo-disqus'
+const { Adapter, TextMessage } = require('hubot')
+const { parse } = require('url')
+const equals = require('array-equal')
+const NeoDisqus = require('neo-disqus')
 
 const { env } = process
 
-export const use = (robot) => new Disqus(robot)
+exports.use = robot => new Disqus(robot)
 
 class Disqus extends Adapter {
   constructor (robot) {
