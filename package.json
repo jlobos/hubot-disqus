@@ -1,6 +1,6 @@
 {
   "name": "hubot-disqus",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Disqus adapter for hubot",
   "license": "MIT",
   "author": "Jesús Lobos <jlobitu@gmail.com>",
